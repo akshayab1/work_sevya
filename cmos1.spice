@@ -1,0 +1,27 @@
+cmos inverter
+.lib /tech/eda-technology/sky130/models/spice/models/sky130.lib.spice tt
+
+.global gnd
+*.subckt cmos vdd in out gnd
+
+xm1 out in s1 s1 sky130_fd_pr__pfet_01v8 w=5 l=1
+xm2 out in s2 s2 sky130_fd_pr__nfet_01v8 w=3 l=1
+
+
+vdd s1 gnd 1.8
+vs s2 gnd 0
+vin in gnd pulse(0 1.8 5n 100p 100p 10n 20n)
+
+.tran 100p 20n
+
+
+
+*.dc vin 0 1.8 0.1
+.control
+run
+
+plot V(out)
+
+.endc
+.end
+

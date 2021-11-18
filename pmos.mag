@@ -1,0 +1,103 @@
+magic
+tech sky130A
+timestamp 1637065225
+<< nwell >>
+rect -18 -18 518 700
+<< pwell >>
+rect 32 -614 188 -505
+<< nmos >>
+rect 200 -450 300 -150
+<< pmos >>
+rect 200 0 300 500
+<< ndiff >>
+rect 0 -200 200 -150
+rect 0 -400 40 -200
+rect 180 -400 200 -200
+rect 0 -450 200 -400
+rect 300 -200 500 -150
+rect 300 -400 320 -200
+rect 460 -400 500 -200
+rect 300 -450 500 -400
+<< pdiff >>
+rect 0 398 200 500
+rect 0 100 40 398
+rect 179 100 200 398
+rect 0 0 200 100
+rect 300 398 500 500
+rect 300 100 321 398
+rect 460 100 500 398
+rect 300 0 500 100
+<< ndiffc >>
+rect 40 -400 180 -200
+rect 320 -400 460 -200
+<< pdiffc >>
+rect 40 100 179 398
+rect 321 100 460 398
+<< psubdiff >>
+rect 33 -504 188 -492
+rect 33 -602 45 -504
+rect 176 -602 188 -504
+rect 33 -614 188 -602
+<< nsubdiff >>
+rect 33 668 427 680
+rect 33 541 50 668
+rect 216 541 427 668
+rect 33 527 427 541
+<< psubdiffcont >>
+rect 45 -602 176 -504
+<< nsubdiffcont >>
+rect 50 541 216 668
+<< poly >>
+rect 200 500 300 513
+rect 200 -39 300 0
+rect 28 -49 300 -39
+rect 28 -120 38 -49
+rect 86 -120 300 -49
+rect 28 -130 300 -120
+rect 200 -150 300 -130
+rect 200 -463 300 -450
+<< polycont >>
+rect 38 -120 86 -49
+<< locali >>
+rect -4 668 506 680
+rect -4 541 50 668
+rect 216 541 506 668
+rect -4 527 506 541
+rect 32 526 506 527
+rect 32 398 187 526
+rect 32 100 40 398
+rect 179 100 187 398
+rect 32 92 187 100
+rect 313 398 468 406
+rect 313 100 321 398
+rect 460 100 468 398
+rect 313 -41 468 100
+rect -31 -49 94 -41
+rect -31 -120 38 -49
+rect 86 -120 94 -49
+rect -31 -128 94 -120
+rect 313 -131 512 -41
+rect 313 -192 468 -131
+rect 32 -200 188 -192
+rect 32 -400 40 -200
+rect 180 -400 188 -200
+rect 32 -492 188 -400
+rect 312 -200 468 -192
+rect 312 -400 320 -200
+rect 460 -400 468 -200
+rect 312 -408 468 -400
+rect 32 -504 492 -492
+rect 32 -602 45 -504
+rect 176 -602 492 -504
+rect 32 -613 492 -602
+rect 32 -614 188 -613
+<< labels >>
+rlabel locali 306 594 306 594 1 vdd
+port 1 n
+rlabel locali 352 -564 352 -564 1 gnd
+port 4 n
+rlabel locali -1 -86 -1 -86 1 in
+port 2 n
+rlabel locali 476 -85 476 -85 1 out
+port 3 n
+<< end >>

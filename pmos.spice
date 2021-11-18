@@ -1,0 +1,32 @@
+* SPICE3 file created from pmos.ext - technology: sky130A
+*.lib /tech/eda-technology/sky130/models/spice/models/sky130.lib.spice tt
+.subckt pmos vdd in out gnd
+X0 out.t0 in.t0 vdd.t0 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=1e+06u
+X1 out.t1 in.t1 gnd.t0 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=1e+06u
+*C0 vdd in 0.02fF
+*C1 vdd out 0.14fF
+*R0 in.n0 in.t0 161.47
+*R1 in.n0 in.t1 103.63
+*R2 in in.n0 81.928
+*R3 vdd vdd.t0 73.144
+*R4 out.n0 out.t0 61.827
+*R5 out.n0 out.t1 52.789
+*R6 out out.n0 1.084
+*R7 gnd gnd.t0 72.32
+*C2 out gnd 0.42fF
+*C3 in gnd 0.65fF
+*C4 vdd gnd 8.76fF
+*C5 vdd.t0 gnd 1.83fF
+.ends
+
+*Xpmos1 vp in out 0 pmos
+
+*Vs1 vp 0 dc 1.8
+*Vs2 in 0 dc 1.8
+
+*.dc Vs2 0 1.8 0.1
+*.control
+*RUN
+*plot V(in) V(out)
+*.endc
+.end

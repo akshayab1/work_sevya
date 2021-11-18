@@ -1,0 +1,5 @@
+| units: 1e+06 tech: sky130A format: MIT
+x a_n99_n47# a_n385_14# a_1_14# SUB l=100 w=500 x=-98 y=14 sky130_fd_pr__nfet_01v8
+R a_1_14# 230
+R a_n385_14# 230
+R a_n99_n47# 295
